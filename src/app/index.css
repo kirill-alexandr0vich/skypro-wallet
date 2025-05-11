@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+    --font-sans: 'Montserrat';
+    --spacing: 1px;
+
+    --color-white: #FFFFFF;
+    --color-black: #000000;
+    --color-gray: #999999;
+    --color-light-gray: #F4F5F6;
+    --color-scroll-gray: #D9D9D9;
+    --color-green: #1FA46C;
+}
+
+body {
+    background-color: var(--color-light-gray);
+}
+
+.scrollbar-custom {
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-scroll-gray) transparent;
+}

@@ -1,0 +1,12 @@
+export { Logo } from './Logo';
+export { Edit } from './Edit';
+export { Delete } from './Delete';
+export { Food } from './Food';
+export { Transport } from './Transport';
+export { Housing } from './Housing';
+export { Entertainments } from './Entertainments';
+export { Education } from './Education';
+export { Other } from './Other';
+export { Arrow } from './Arrow';
+export { SortingAsc } from './SortingAsc';
+export { SortingDesc } from './SortingDesc';

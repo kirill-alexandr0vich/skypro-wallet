@@ -1,0 +1,1 @@
+export { $categoryList } from './model';
