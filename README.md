@@ -1,54 +1,46 @@
-# React + TypeScript + Vite
+# 💸 SkyPro Wallet
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Wallet App Preview](https://ibb.co/93f5Tyym)
 
-Currently, two official plugins are available:
+🔗 **Демо-версия:** [kirill-alexandr0vich.github.io/skypro-wallet](https://kirill-alexandr0vich.github.io/skypro-wallet/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌟 Особенности
+- 📊 Визуализация расходов по категориям
+- 💸 Удобное добавление транзакций
+- 🗂️ Гибкая система категорий
+- ⚡ Мгновенная синхронизация данных
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠 Технологический стек
+| Технология                                                              | Описание              |
+|-------------------------------------------------------------------------|-----------------------|
+| ![React](https://img.shields.io/badge/React-18-blue)                    | Основа интерфейса     |
+| ![TypeScript](https://img.shields.io/badge/TypeScript-4.9-blue)         | Типизация кода        |
+| ![Effector](https://img.shields.io/badge/Effector-22-state)             | Управление состоянием |
+| ![Effector-Forms](https://img.shields.io/badge/Effector_Forms-1.7-9cf)  | Формы с валидацией    |
+| ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.3-blueviolet) | Современные стили     |
+| ![Vite](https://img.shields.io/badge/Vite-4.0-yellow)                   | Сборка проекта        |
+
+---
+
+## 🚀 Быстрый старт
+
+### 📦 Установка зависимостей
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+### 🧪 Локальный запуск
+```bash
+vite
 ```
+
+---
+
+## 🧑‍💻 Автор
+Разработано с душой 💙 [@kirill-alexandr0vich](https://github.com/kirill-alexandr0vich)
+
+Открой [http://localhost:5173](http://localhost:5173) в браузере.

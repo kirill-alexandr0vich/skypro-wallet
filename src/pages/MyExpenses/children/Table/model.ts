@@ -17,29 +17,7 @@ export type Expense = {
 
 const deleteExpenseByIdFn = createEvent<string>();
 
-const $expenseList: StoreWritable<Expense[]> = createStore([
-  {
-    id: '1',
-    desc: 'Бензин',
-    category: 'Транспорт',
-    date: '24.01.2024',
-    amount: '1856 ₽'
-  },
-  {
-    id: '2',
-    desc: 'Пятерочка',
-    category: 'Еда',
-    date: '25.02.2023',
-    amount: '577 ₽'
-  },
-  {
-    id: '3',
-    desc: 'Золотое Яблоко',
-    category: 'Другое',
-    date: '24.01.2025',
-    amount: '7777 ₽'
-  }
-]);
+const $expenseList: StoreWritable<Expense[]> = createStore([]);
 const $filteredExpenseList: StoreWritable<Expense[]> = createStore([]);
 
 const $columnNamesList = createStore<string[]>(['Описание', 'Категория', 'Дата', 'Сумма']);
