@@ -1,28 +1,20 @@
-# 💸 SkyPro Wallet
+# Skypro.Wallet
 
-![Wallet App Preview](https://ibb.co/93f5Tyym)
+![Wallet App Preview](public/preview.jpg)
 
 🔗 **Демо-версия:** [kirill-alexandr0vich.github.io/skypro-wallet](https://kirill-alexandr0vich.github.io/skypro-wallet/)
 
 ---
 
-## 🌟 Особенности
-- 📊 Визуализация расходов по категориям
-- 💸 Удобное добавление транзакций
-- 🗂️ Гибкая система категорий
-- ⚡ Мгновенная синхронизация данных
-
----
-
-## 🛠 Технологический стек
-| Технология                                                              | Описание              |
-|-------------------------------------------------------------------------|-----------------------|
-| ![React](https://img.shields.io/badge/React-18-blue)                    | Основа интерфейса     |
-| ![TypeScript](https://img.shields.io/badge/TypeScript-4.9-blue)         | Типизация кода        |
-| ![Effector](https://img.shields.io/badge/Effector-22-state)             | Управление состоянием |
-| ![Effector-Forms](https://img.shields.io/badge/Effector_Forms-1.7-9cf)  | Формы с валидацией    |
-| ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.3-blueviolet) | Современные стили     |
-| ![Vite](https://img.shields.io/badge/Vite-4.0-yellow)                   | Сборка проекта        |
+**## 🛠 Технологический стек
+| Технология       | Назначение               |
+|------------------|--------------------------|
+| React            | Основа интерфейса        |
+| TypeScript       | Типизация кода           |
+| Effector         | Управление состоянием    |
+| Effector Forms   | Формы с валидацией       |
+| Tailwind CSS     | Современные стили        |
+| Vite             | Сборка проекта           |
 
 ---
 
@@ -38,9 +30,9 @@ npm install
 vite
 ```
 
+### Открой [http://localhost:5173](http://localhost:5173) в браузере.
+
 ---
 
 ## 🧑‍💻 Автор
-Разработано с душой 💙 [@kirill-alexandr0vich](https://github.com/kirill-alexandr0vich)
-
-Открой [http://localhost:5173](http://localhost:5173) в браузере.
+Разработано с душой [@kirill-alexandr0vich](https://github.com/kirill-alexandr0vich)
