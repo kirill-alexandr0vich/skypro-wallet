@@ -46,7 +46,12 @@ export const CategoryFilter = () => {
 
   const filterRef = useRef<HTMLDivElement>(null);
 
-  useClickOutside(filterRef, () => setOpen(false));
+  const closeOutside = () => {
+    setSelected(selectedCategories);
+    setOpen(false)
+  }
+
+  useClickOutside(filterRef, closeOutside);
 
   return (
     <div className="relative" ref={filterRef}>
@@ -71,7 +76,7 @@ export const CategoryFilter = () => {
                         onChange={() => select(category)}
                         className="accent-green"
                       />
-                      <span className="text-sm">{category.name}</span>
+                      <span className="text-xs">{category.name}</span>
                     </label>
                   </li>
                 ))}

@@ -1,5 +1,10 @@
 import { createStore, createEvent, sample } from 'effector';
-import { $filteredExpenseList } from 'src/pages/MyExpenses/children/Table';
+import { $filteredExpenseList, deleteExpenseByIdFn } from 'src/pages/MyExpenses/children/Table';
+import { addExpenseFn } from 'src/pages/MyExpenses/children/New';
+import { Expense } from 'src/pages/MyExpenses/children/Table/model';
+import {
+  $selectedCategoriesForFilteringList
+} from 'src/pages/MyExpenses/children/Table/children/Filters/children/Category';
 
 type SortOrder = 'asc' | 'desc' | null;
 
@@ -16,19 +21,18 @@ const parseDate = (str: string) => {
   return new Date(y, m - 1, d);
 };
 
-const $sortedExpenseList = sample({
-  source: {
-    list: $filteredExpenseList,
-    order: $sortOrder
-  },
-  fn: ({ list, order }) => {
+sample({
+  clock: [toggleSortOrder, deleteExpenseByIdFn, addExpenseFn, $selectedCategoriesForFilteringList],
+  source: [$filteredExpenseList, $sortOrder],
+  fn: ([list, order]: [Expense[], SortOrder]) => {
     if (order === null) return list;
     return [...list].sort((a, b) => {
       const da = parseDate(a.date).getTime();
       const db = parseDate(b.date).getTime();
       return order === 'asc' ? da - db : db - da;
     });
-  }
+  },
+  target: $filteredExpenseList
 });
 
-export { toggleSortOrder, $sortOrder, $sortedExpenseList };
+export { toggleSortOrder, $sortOrder };

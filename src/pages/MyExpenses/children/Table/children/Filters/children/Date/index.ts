@@ -1,1 +1,1 @@
-export { toggleSortOrder, $sortedExpenseList } from './model';
+export { toggleSortOrder } from './model';

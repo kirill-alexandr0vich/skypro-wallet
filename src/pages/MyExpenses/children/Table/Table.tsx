@@ -3,12 +3,11 @@ import { $columnNamesList, $expenseList, $filteredExpenseList, deleteExpenseById
 import { Filters } from './children/Filters/Filters';
 import { Delete, Edit } from 'src/shared/ui/images';
 import { useUnit } from 'effector-react/compat';
-import { $sortedExpenseList } from 'src/pages/MyExpenses/children/Table/children/Filters/children/Date';
 
 export const Table = (props: { height: number }) => {
   const [expenseList, filteredExpenseList] = useUnit([$expenseList, $filteredExpenseList]);
 
-  const expenses = useList($sortedExpenseList, (expense) => (
+  const expenses = useList($filteredExpenseList, (expense) => (
     <tr className="grid grid-cols-4 gap-x-32 justify-items-start">
       <td className="w-full truncate" scope="row">
         {expense.desc}
